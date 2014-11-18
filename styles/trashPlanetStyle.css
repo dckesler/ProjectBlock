@@ -1,0 +1,196 @@
+.trashman {
+    
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 130px;
+}
+
+.trashmanWalk {
+    -webkit-animation: playTrashMan 1s steps(9) infinite;
+    background: url('../imgs/trashman.png');
+    background-repeat: no-repeat;
+}
+
+.trashmanPickup {
+    -webkit-animation: trashPickUp 1.6s steps(15) infinite;
+    background: url('../imgs/trashmanPickup.png');
+    background-repeat: no-repeat;
+}
+
+.trashmanSurprise {
+    -webkit-animation: trashSurprise 1s steps(3) infinite;
+    background: url('../imgs/trashmanSurprise.png');
+    background-repeat: no-repeat;
+}
+
+.trashmanQuickWalk {
+    -webkit-animation: playTrashMan .5s steps(9) infinite;
+    background: url('../imgs/trashman.png');
+    background-repeat: no-repeat;
+}
+
+.trashmanReset {
+    -webkit-animation: trashReset 2s steps(10) infinite;
+    background: url('../imgs/trashmanReset.png');
+    background-repeat: no-repeat;
+}
+
+@keyframes playTrashMan {
+
+    100% {
+        background-position: -900px
+    }
+}
+@-webkit-keyframes playTrashMan {
+    100% {
+        background-position: -900px
+    }
+}
+@-moz-keyframes playTrashMan {
+    100% {
+        background-position: -900px
+    }
+}
+@-ms-keyframes playTrashMan {
+    100% {
+        background-position: -900px
+    }
+}
+@-o-keyframes playTrashMan {
+    100% {
+        background-position: -900px
+    }
+}
+
+@keyframes trashSurprise {
+    100% {
+        background-position: -300px;
+    }
+}
+@-webkit-keyframes trashSurprise {
+    100% {
+        background-position: -300px;
+    }
+}
+
+@keyframes trashPickUp {
+
+    100% {
+        background-position: -1500px
+    }
+}
+@-webkit-keyframes trashPickUp {
+    100% {
+        background-position: -1500px
+    }
+}
+@-moz-keyframes trashPickUp {
+    100% {
+        background-position: -1500px
+    }
+}
+@-ms-keyframes trashPickUp {
+    100% {
+        background-position: -1500px
+    }
+}
+@-o-keyframes trashPickUp {
+    100% {
+        background-position: -1500px
+    }
+}
+
+@keyframes trashReset {
+
+    100% {
+        background-position: -1000px
+    }
+}
+@-webkit-keyframes trashReset {
+    100% {
+        background-position: -1000px
+    }
+}
+@-moz-keyframes trashReset {
+    100% {
+        background-position: -1000px
+    }
+}
+@-ms-keyframes trashReset {
+    100% {
+        background-position: -1000px
+    }
+}
+@-o-keyframes trashReset {
+    100% {
+        background-position: -1000px
+    }
+}
+
+
+.planet {
+    position: fixed;
+    width:1300px;
+    height:1300px;
+    left: 50%;
+    margin-left:-650px;
+    bottom: -700px;
+}
+.planetSpin {
+    animation: spin 60s infinite linear;
+    -webkit-animation: spin 60s infinite linear;
+    -moz-animation: spin 60s infinite linear;
+    -o-animation: spin 60s infinite linear;
+    -ms-animation: spin 60s infinite linear;
+}
+.litter {
+    position: fixed;
+    width:1300px;
+    height:1300px;
+    left: 50%;
+    margin-left:-650px;
+    bottom: -700px;
+    animation: spin 60s infinite linear;
+    -webkit-animation: spin 60s infinite linear;
+    -moz-animation: spin 60s infinite linear;
+    -o-animation: spin 60s infinite linear;
+    -ms-animation: spin 60s infinite linear;
+}
+.forwardStuff {
+    position: fixed;
+    width:1300px;
+    height:1300px;
+    left: 50%;
+    margin-left:-650px;
+    bottom: -700px;
+    animation: spin 60s infinite linear;
+    -webkit-animation: spin 60s infinite linear;
+    -moz-animation: spin 60s infinite linear;
+    -o-animation: spin 60s infinite linear;
+    -ms-animation: spin 60s infinite linear;
+    z-index: 10;
+}
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
