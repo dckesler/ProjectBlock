@@ -22,7 +22,7 @@ body {
 	z-index: 1000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	.site-title{font-size: 3.5rem;}
 	.under-title {font-size: 1.7rem;}
 }
