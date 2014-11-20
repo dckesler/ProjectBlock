@@ -7,10 +7,9 @@
                 restrict: "E",
                 templateUrl: "js/views/trashPlanet.html",
                 link: function(scope, elem, attr){
-                    console.log("heyo");
                     $(document).ready(function(){
+
                         var walk = function(){
-                            console.log("What?");
                             setTimeout(function(){
                                 //Surpise for 1000
                                 document.getElementById('trashman').className = "trashman trashmanSurprise";
@@ -50,8 +49,44 @@
                                 }, 1000)
                             }, 13000);
                         };
-                        walk();
 
+                        var initialize = function(){
+                            $('#planet').css({'-webkit-animation-play-state': 'paused'});
+                            $('#litter').css({'-webkit-animation-play-state': 'paused'});
+                            $('#forward').css({'-webkit-animation-play-state': 'paused'});
+                            document.getElementById('trashman').className = "trashman trashmanSurprise";
+                            setTimeout(function() {
+                                console.log(1);
+                                document.getElementById('trashman').className = "trashman trashmanQuickWalk";
+                                setTimeout(function(){
+                                    console.log(2);
+                                    document.getElementById('trashman').className = "trashman trashmanPickup";
+                                    setTimeout(function(){
+                                        console.log(3);
+                                        document.getElementById('trashman').className = "trashman trashmanReset";
+                                        setTimeout(function(){
+                                            elem.css({"opacity": 1});
+                                            document.getElementById('trashman').className = "trashman trashmanWalk";
+                                            $('#planet').css({'-webkit-animation-play-state': 'running'});
+                                            $('#litter').css({'-webkit-animation-play-state': 'running'});
+                                            $('#forward').css({'-webkit-animation-play-state': 'running'});
+                                            walk();
+                                        },100)
+                                    },100)
+                                },100)
+                            },100)
+                        };
+
+                        var loadImage = function(){
+                            elem.css({"opacity": 0});
+                            var img = new Image();
+                            $('#planet').load(function(){
+                                initialize();
+                            });
+                            img.src = "imgs/planet.jpg";
+                        };
+
+                        loadImage();
                     })
                 }
             }
