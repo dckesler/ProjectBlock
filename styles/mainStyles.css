@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+body {
+	font-family: 'Indie Flower', cursive;
+	color: #62695A;
+}
+
+.site-title {
+	position: absolute;
+	font-size: 7rem;
+	z-index: 1000;
+	top: 0;
+	left: 24%;
+	margin: 0;
+}
+
+.under-title {
+	position: absolute;
+	font-size: 2.5rem;
+	top: 125px;
+	left: 37%;
+	margin: 0;
+	z-index: 1000;
+}
