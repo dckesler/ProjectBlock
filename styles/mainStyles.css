@@ -126,6 +126,7 @@ body {
 	position: absolute;
 	background: url('../imgs/cubeAnimation.png');
 	left: 50%;
+	bottom: 5px;
 	margin-left: -100px;
 	animation: cubeBounce 1s steps(11) infinite;
 	-webkit-animation: cubeBounce 1s steps(11) infinite;
