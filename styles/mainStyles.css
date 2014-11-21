@@ -119,3 +119,45 @@ body {
 	.site-title{font-size: 3rem;}
 	.under-title {font-size: 1.3rem;}
 }
+
+.cubeBounce {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background: url('../imgs/cubeAnimation.png');
+	left: 50%;
+	margin-left: -100px;
+	animation: cubeBounce 1s steps(11) infinite;
+	-webkit-animation: cubeBounce 1s steps(11) infinite;
+	-moz-animation: cubeBounce 1s steps(11) infinite;
+	-o-animation: cubeBounce 1s steps(11) infinite;
+	-ms-animation: cubeBounce 1s steps(11) infinite;
+
+}
+
+@keyframes cubeBounce {
+
+	100% {
+		background-position: -2200px
+	}
+}
+@-webkit-keyframes cubeBounce {
+	100% {
+		background-position: -2200px
+	}
+}
+@-moz-keyframes cubeBounce {
+	100% {
+		background-position: -2200px
+	}
+}
+@-ms-keyframes cubeBounce {
+	100% {
+		background-position: -2200px
+	}
+}
+@-o-keyframes cubeBounce {
+	100% {
+		background-position: -2200px
+	}
+}
