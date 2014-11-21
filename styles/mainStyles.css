@@ -2,14 +2,17 @@
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
 body {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: #62695A;
 	text-align: center;
+	font-weight: 200;
 }
+
+/*HEADER*/
 
 .site-title {
 	position: relative;
-	font-size: 7rem;
+	font-size: 5.5rem;
 	z-index: 1000;
 	top: 0;
 	margin: 0;
@@ -17,10 +20,95 @@ body {
 
 .under-title {
 	position: relative;
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	margin: 0;
 	z-index: 1000;
 }
+
+.about-word {
+	position: relative;
+	top: -128px;
+	right: 327px;
+	z-index: 1000;
+	margin: 0;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+
+/*SIGN IN AND TRASH BTN*/
+
+.sign-in {
+	position: relative;
+	top: -123px;
+	left: 360px;
+}
+
+.trash-btn {
+	width: 80px;
+	height: 22px;
+	opacity: 0.8;
+	z-index: 1000;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-transition: opacity 200ms;
+	  
+	  
+	top: 30%;
+	right: 50%;
+	position: absolute;
+
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	padding: 0;
+}
+
+.lid {
+	-webkit-transform-origin: -7% 100%;
+	-webkit-transition: -webkit-transform 150ms;
+	height: 6px;
+	width: 14px;
+	background: url('/imgs/trash-btn.png') 0 0 no-repeat;
+	left: 8px;
+	position: absolute;
+	right: 8px;
+	top: 2px;
+}
+
+.trash-btn:hover .lid {
+	-webkit-transform: rotate(-45deg);
+	-webkit-transition: -webkit-transform 250ms;
+}
+
+.can {
+	height: 12px;
+	margin-left: 1px;
+	margin-right: 2px;
+	margin-top: 4px;
+	width: 11px;
+	background: url('/imgs/trash-btn.png') -1px -4px no-repeat;
+	left: 8px;
+	position: absolute;
+	right: 8px;
+	top: 2px;
+}
+
+.sign-in-word {
+	position: relative;
+	top: -7px;
+	left: 20px;
+	font-size: 1.5rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	color: #62695A;
+}
+
+
+
 
 @media (max-width: 650px) {
 	.site-title{font-size: 3.5rem;}
